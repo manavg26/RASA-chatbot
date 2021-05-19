@@ -1,0 +1,139 @@
+version: "2.0"
+
+nlu:
+- regex: seat_number
+  examples: |
+    - \d{1,12}
+
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: faq_time
+  examples: |
+    - What are your timings?
+    - When will you open?
+    - Till when are you open?
+
+- intent: faq_open
+  examples: |
+    - What days are you open?
+    - How many days are you open?
+    - Are you open on sunday?
+    - Are you open on weekends?
+
+- intent: faq_cancel
+  examples: |
+    - How do I cancel a reservation?
+    - cancel?
+    - I want to cancel my reservation
+    - Cancel my reservation
+    - Cancel my booking
+
+- intent: faq_specials
+  examples: |
+    - What are the specials?
+    - What is the speciality?
+    - specials?
+    - What is chef's recommendation?
+    - Suggestions?
+
+- intent: reservation
+  examples: |
+    - I want to reserve a table
+    - reservation
+    - table reserve
+    - Can you make a reservation for me?
+
+- intent: num_seats
+  examples: |
+    - [2](seat_number) seats
+    - [4](seat_number)
+
+
